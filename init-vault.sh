@@ -33,11 +33,6 @@ sudo systemctl daemon-reload
 
 sudo systemctl start vault.service
 
-echo "verify the status of vault service"
-sleep 5
-systemctl status vault.service
-
-
 echo "Initialize unseal key and root token (please save it for later use)"
 sleep 5
 

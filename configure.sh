@@ -1,6 +1,7 @@
 export VAULT_CONFIG=/etc/vault.d
 echo "Creating the vault data directory"
-mkdir -p $VAULT_CONFIG
+mkdir -p $VAULT_CONFIG/vault-data
+chown vault:root $VAULT_CONFIG -R
 
 sleep 10
 echo "Generating the certificates"
